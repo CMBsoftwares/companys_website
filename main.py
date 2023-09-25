@@ -11,6 +11,10 @@ def home():
 def aboutus():
   return render_template('aboutus.html')
 
+@app.route("/home1")
+def home1():
+  return render_template('index.html')
+
 
 if __name__ == "__main__":
   app.run(host='0.0.0.0',debug=True)
